@@ -32,7 +32,7 @@ There can also be negative betas. Some financial instruments move in inverse rel
 
 If the S&P goes up by 10%, you might expect your stock to go up by (1.35)*(10%), or 13.5%.
 
-However, this is a statistical quantity typically with a significant amount of standard error associated with it. 
+However, this is a statistical quantity, typically with a significant amount of standard error associated with it. 
 
 We can't say that this stock moves in perfect lockstep with respect to the market, but that this is the typical relationship
 it exhibits with respect to the market, over the chosen interval of time, and using the chosen period of returns calculation.
