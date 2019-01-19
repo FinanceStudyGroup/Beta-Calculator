@@ -1,4 +1,4 @@
-# Beta-Calculator
+# MATLAB Beta Calculator
 This is a calculator for determining equities betas for use in risk analysis and valuation.
 
 -----------------------------------------------------------------------------------------------------------------
