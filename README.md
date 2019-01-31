@@ -16,6 +16,8 @@ in addition to being able to name the variables as you see fit.
 
 -----------------------------------------------------------------------------------------------------------------
 
+![](Images/Beta(CVS,SPX,'CVS','SPX',1,'d').png)
+
 What is a beta? The beta coefficient is the slope of the line determined by linear regression of returns series,
 returns on a given y-valued instrument versus returns on a given x-valued one.
 
