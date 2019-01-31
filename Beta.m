@@ -1,4 +1,4 @@
-function Beta (y,x,yname,xname,interval,frequency,color)
+function B = Beta (y,x,yname,xname,interval,frequency,color)
 
 % MATLAB Beta Calculator: A simple calculator for determining price
 % sensitivity of financial assets. Data to be sourced from Excel.
@@ -222,3 +222,7 @@ xtcell_trim = strtrim(xtcell);
 xtpercent = strcat(xtcell_trim, '%');
 set(gca, 'xticklabel', xtpercent);
 linkaxes([ax3,ax2],'x');
+
+% Assign beta to a variable
+% This allows you to import the exact variable into Excel
+B = p(1);
