@@ -8,7 +8,7 @@ function B = Beta (y,x,yname,xname,interval,frequency,color)
 % to the dates they have in common.
 
 % Hardcode setting for the number of acceptable standard deviations
-sigma = 100;
+sigma = 5;
 
 % Hardcode setting for the symbol of the scatter plot
 symbol = 'o';
@@ -190,6 +190,8 @@ rsqstr = ['R^2 = ', num2str(Rsq2),''];
 eqnstr = ['y = ', a1str, 'x + ', a0str, ''];
 dim = [.555 .6 .3 .3];
 annotation('textbox',dim,'String',{betaL,rsqstr,eqnstr},'BackgroundColor','white','FitBoxToText','on');
+% Get rid of tick marks
+set(gca,'TickLength',[0,0]);
 
 % y-Histogram and Attributes
 ax1=subplot(10,10,[1,81]);
