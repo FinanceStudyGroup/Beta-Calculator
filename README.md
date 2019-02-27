@@ -9,7 +9,9 @@ Within MATLAB, it's then a simple process to apply this function to any given st
 
 Example function call syntax would be,
 
+```
 Beta(CVS,SPX,'CVS','SPX',1,'d')
+```
 
 where you can run, daily ('d'), weekly ('w') or monthly ('m') calculations with it as well, 
 in addition to being able to name the variables as you see fit.
