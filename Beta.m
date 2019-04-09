@@ -188,7 +188,16 @@ a0str = num2str(p(2));
 betaL = ['Beta = ',num2str(p(1)),''];
 rsqstr = ['R^2 = ', num2str(Rsq2),''];
 eqnstr = ['y = ', a1str, 'x + ', a0str, ''];
-dim = [.555 .6 .3 .3];
+
+% Variable location of text box, depending on the slope of beta
+if p(1) >= 0
+    % If beta >= 0, text box is on the left
+    dim = [.22 .71 .2 .2];
+elseif p(1) < 0
+    % If beta < 0, text box is on the right
+    dim = [.54 .6 .3 .3];
+end
+
 annotation('textbox',dim,'String',{betaL,rsqstr,eqnstr},'BackgroundColor','white','FitBoxToText','on');
 % Get rid of tick marks
 set(gca,'TickLength',[0,0]);
@@ -211,7 +220,7 @@ linkaxes([ax1,ax2],'y');
 
 % x-Histogram and Attributes
 ax3=subplot(10,10,[92,100]);
-histogram(x,'Normalization','probability','FaceColor',color,'BinWidth', 0.005)
+histogram(x,'Normalization','probability','FaceColor',color,'BinWidth', 0.0025)
 xname = sprintf('%s %s %s',rfrequency,xname,start);
 xlabel(xname,'FontSize',10)
 set(gca, 'YTick', []);
